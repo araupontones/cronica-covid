@@ -21,3 +21,8 @@ tema_libro <- theme(text = element_text(family = font_axis),
 )
 
 
+tema_mapa <- tema_libro +
+  theme(axis.text.x = element_blank(),
+        legend.position = 'none',
+        plot.title = element_markdown(),
+        plot.subtitle = element_markdown(color = '#525252'))

@@ -15,7 +15,8 @@ mx_raw <- covid19(country= "Mexico",
 #crear indicadores clave --------------------------------------------------------
 mx_clean <- mx_raw %>%
   mutate(daily_cases = confirmed -lag(confirmed,1),
-         casos_14 = rollmean(daily_cases, 14, NA)
+         casos_14 = rollmean(daily_cases, 14, NA),
+         daily_deaths = deaths - (lag(deaths, 1))
   )
 
 

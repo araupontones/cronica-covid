@@ -33,11 +33,13 @@ Mapeo de indicadores, fechas importantes y dimensiones: [link](https://docs.goog
 
 ### Análisis covid
 
-Estamos utilizando el paquete 📦 COVID19 de R para descargar los datos de casos, muertes, vacunacion, etc. 
+Estamos utilizando el paquete 📦 COVID19 de R para descargar los datos de casos, muertes, vacunacion, etc.
+[Lista de indicadores](https://covid19datahub.io/articles/doc/data.html)
+
 
 ### Fuentes de datos de otros indicadores
 
-**Definir**
+[Our world in Data](https://github.com/owid/covid-19-data/tree/master/public/data)
 
 
 ### Gráficas

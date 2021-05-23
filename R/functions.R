@@ -36,4 +36,3 @@ annotate_evento <- function(data, x,y,fecha,label, hjust = 0, vjust = 1.5, ...){
 #              color = color_axis
 # )
 
-}
