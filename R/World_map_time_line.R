@@ -17,7 +17,9 @@ dates <- c("2020-01-05",
            "2020-04-15",
            "2020-04-30",
            "2020-05-15",
-           "2020-05-31"
+           "2020-05-31",
+           "2021-03-15",
+           "2021-04-01"
            )
 
 
@@ -26,13 +28,6 @@ for(date in dates){
   crear_mapa_casos(date = date)
   
 }
-
-date = "2020-03-30"
-crear_mapa_casos(date)
-
-
-
-sort(unique(world_sf$country))
 
 
 

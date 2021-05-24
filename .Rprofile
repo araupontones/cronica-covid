@@ -1,6 +1,7 @@
 message('Cronicas Covid')
 
 Sys.setlocale("LC_ALL", "Spanish")
+options("scipen"=100, "digits"=4)
 
 
 library(glue)
@@ -20,6 +21,7 @@ library(dplyr)
 dir_charts <- "charts"
 dir_data <- "data"
 dir_functions <- "functions"
+dir_styles <- "styles"
 
 
 load_functions <- function(dir){
@@ -35,6 +37,7 @@ load_functions <- function(dir){
 }
 
 load_functions(dir_functions)
+load_functions(dir_styles)
 
 #load fonts
 #font_import(paths = "C:/Users/andre/AppData/Local/Microsoft/Windows/Fonts")

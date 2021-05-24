@@ -20,7 +20,7 @@ crear_mapa_casos <- function(date = "2020-01-5") {
   if(length(check) < 1){
     
     message(glue('No estan en shapefile: {check}'))
-    message("Limpiar en world sf")
+    #message("Limpiar en world sf")
     
   }
   
@@ -65,7 +65,7 @@ crear_mapa_casos <- function(date = "2020-01-5") {
     scale_color_manual(values = c(color_axis, color_d_cases_line, "white"))+
     
     labs(title = glue('{date_label}'),
-         subtitle = glue('Casos confirmados acomulados: {casos_hasta_hoy}<br>Muertes: {muertes_hasta_hoy}'),
+         subtitle = glue('Casos confirmados acumulados: {casos_hasta_hoy}<br>Muertes: {muertes_hasta_hoy}'),
          caption = "Datos de R package COVID19 | libro Quédate en Casa de Santiago Arau | 2021"
     ) +
     tema_mapa
