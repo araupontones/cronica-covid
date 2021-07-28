@@ -32,14 +32,16 @@ Mapeo de indicadores, fechas importantes y dimensiones: [link](https://docs.goog
 ## Descripción de análisis
 
 ### Análisis covid
+[Our world in Data](https://github.com/owid/covid-19-data/tree/master/public/data)
 
-Estamos utilizando el paquete 📦 COVID19 de R para descargar los datos de casos, muertes, vacunacion, etc.
-[Lista de indicadores](https://covid19datahub.io/articles/doc/data.html)
+Del 1 de enero de 2020 al 27 de julio del 2021.
 
 
 ### Fuentes de datos de otros indicadores
 
-[Our world in Data](https://github.com/owid/covid-19-data/tree/master/public/data)
+Estamos utilizando el paquete 📦 COVID19 de R para descargar los datos de casos, muertes, vacunacion, etc.
+[Lista de indicadores](https://covid19datahub.io/articles/doc/data.html)
+
 
 
 ### Gráficas
