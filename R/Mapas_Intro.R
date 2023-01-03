@@ -4,30 +4,33 @@ owid_raw <- rio::import(file.path(dir_data, "clean_owid.rds"))
 sf <- rio::import(file.path(dir_data, "world_sf.rds"))
 NE_box_rob <- rio::import(file.path(dir_data, "world_bbox.rds"))
 
+names(owid_raw)
 
 
 #define days ================================================================
 first_day <- as.Date("2020-01-22")
-last_day <- as.Date("2021-07-27")
+last_day <- as.Date("2020-03-11")
 
 days_study = seq(from = first_day, to = last_day, by = 'day')
 (length(days_study) - 1) / 4
 
+length(days_study)
 
 
-
-second_date <- first_day + 138
-third_date <- first_day + (138*3)
+second_date <- first_day + 12.25
+third_date <- first_day + (12.25*3)
 last_date <- first_day + (138*4)
 
+second_date
+third_date
 
 
 dates <- c(
   
   "2020-01-22",
-  "2020-06-08",
-  "2021-03-11",
-  "2021-07-27"
+  "2020-02-03",
+  "2020-02-27",
+  "2020-03-11"
   
   
 )
@@ -35,11 +38,15 @@ dates <- c(
         
 
 
+plot_map_intro(fecha ="2020-03-11",
+               indicador = total_deaths,
+               tipo = "muertes")
+
 #create maps ===================================================================
 #casos
 for(d in dates){
   plot_map_intro(fecha =d,
-                 indicador = cases_cienmil_round,
+                 indicador = total_cases,
                  tipo = "casos")
   
 }
@@ -48,7 +55,7 @@ for(d in dates){
 
 for(d in dates){
   plot_map_intro(fecha =d,
-                 indicador = deaths_cienmil_round,
+                 indicador = total_deaths,
                  tipo = "muertes")
   
 }
